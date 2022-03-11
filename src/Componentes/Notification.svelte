@@ -3,29 +3,23 @@
   import Badge from "./Badge.svelte";
 </script>
 
-<div>
-  <div class="wrapper">
-    <div class="btn">
-      <Button type="neutral">Inbox</Button>
-    </div>
-    <div class="notification">
-      <Badge type="secondary">99+</Badge>
-    </div>
-  </div>
-</div>
+<div class="notification">
+  <span><Button type="neutral">Inbox</Button></span>
+  <span class="mark"><Badge type="secondary">99+</Badge></span>
+</div> 
 
+   
 <style>
-  .wrapper {
-    display: inline-block;
-  }
-
-  .btn {
-    position: absolute;
-  }
-
   .notification {
-    position: relative;
-    left: 90%;
-    top: -8px;
-  }
+  position: relative;
+  display: inline-block;
+}
+
+
+.notification .mark {
+  position: absolute;
+  top: -8px;
+  right: -20px;
+  
+}
 </style>

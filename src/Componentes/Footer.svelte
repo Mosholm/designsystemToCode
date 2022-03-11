@@ -29,12 +29,13 @@
 <style>
   footer {
     display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(150px, 1fr) );
+    grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
     background: var(--neutral-color);
     padding: 2rem;
     color: var(--font-primary-color);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     width: 100%;
+    min-width: 60vw;
   }
 
   h3 {
@@ -45,6 +46,6 @@
 
   ul{
       list-style: none;
-      line-height: 1rem;
+      line-height: 1.3rem;
   }
 </style>
